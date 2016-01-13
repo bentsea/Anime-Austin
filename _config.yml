@@ -1,11 +1,11 @@
 # Site settings
-title: Omnicon
-email: info@omnicononline.com
-description: "Omnicon returns, the best pop-culture convention in south Texas! Awesome vendors, voice actors, and cosplay at an unforgettable event, August 5-6, 2016"
+title: Anime Austin
+email: info@animeaustin.com
+description: ""
 baseurl: ""
-url: "http://omnicononline.com"
-twitter_username: omnicononline
-facebook_username: omniconconvention
+url: "http://www.animeaustin.com"
+twitter_username: 
+facebook_username: AnimeAustin
 github_username:  bentsea
 
 # Build settings

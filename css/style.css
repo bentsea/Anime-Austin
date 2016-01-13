@@ -48,7 +48,7 @@ blockquote .cite p {
   line-height: 32px;
 }
 blockquote .cite footer {
-  color: #ff453c;
+  color: #643F99;
   font-size: 24px;
   font-weight: bold;
   position: relative;
@@ -90,7 +90,7 @@ a {
   outline: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #1c1c1c;
+  color: #643F99;
   outline: none !important;
 }
 
@@ -106,7 +106,7 @@ h1 {
 h1:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
-  background-color: #ff453c;
+  background-color: rgb(100, 63, 153);
   content: "";
   left: 0;
   height: 100%;
@@ -241,7 +241,7 @@ p {
   z-index: 2;
 }
 .about .information .date {
-  color: #ff453c;
+  color: #643F99;
   font-size: 100px;
   font-weight: bold;
   margin: -40px 0;
@@ -270,7 +270,7 @@ p {
   F
 ****/
 .find-way .form-group {
-  background-color: #ff453c;
+  background-color: #643F99;
   margin-bottom: 0;
   position: relative;
   min-height: 50px;
@@ -278,7 +278,7 @@ p {
   padding-left: 10px;
 }
 .find-way .form-group:after {
-  background-color: #ff453c;
+  background-color: #643F99;
   content: "";
   display: block;
   height: 50px;
@@ -465,7 +465,7 @@ p {
   color: #ff453c;
 }
 .modal .modal-dialog .modal-footer {
-  background-color: #ff453c;
+  background-color: #643F99;
   border: none;
   margin-top: 0;
   padding: 0;
@@ -593,7 +593,7 @@ p {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   bottom: 0;
-  color: #ff453c;
+  color: #643F99;
   height: 12px;
   margin: auto;
   font-size: 10px;
@@ -619,7 +619,7 @@ p {
   font-weight: bold;
 }
 .panel-group .panel .panel-header .time i {
-  color: #ff453c;
+  color: #643F99;
   display: inline-block;
   font-size: 24px;
   left: 1px;
@@ -690,7 +690,7 @@ p {
   display: inline-block;
 }
 .slider .overlay .information > div i {
-  color: #ff453c;
+  color: #13173A;
   font-size: 28px;
   margin-right: 10px;
   vertical-align: bottom;
@@ -719,7 +719,7 @@ p {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #a20700;
+  background-color: #13173A;
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
@@ -816,7 +816,7 @@ p {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #ff453c;
+  background-color: #13173A;
   height: 55px;
   width: 55px;
   display: block;
@@ -832,7 +832,7 @@ p {
 #testimonials .quote {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
-  color: #ff453c;
+  color: #643F99;
   height: 20px;
   font-size: 400px;
   font-weight: bold;
@@ -875,7 +875,7 @@ p {
   margin-bottom: 0;
 }
 .ticket header figure {
-  color: #ff453c;
+  color: #643F99;
   font-size: 24px;
   font-weight: bold;
 }
@@ -894,7 +894,7 @@ p {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 .ticket ul li.checked i {
-  color: #ff453c;
+  color: #643F99;
 }
 .ticket ul li.unchecked {
   color: rgba(0, 0, 0, 0.2);
@@ -947,19 +947,19 @@ p {
   box-shadow: 0px 1px 2px transparent, inset 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .btn.btn-default, select.btn-default {
-  color: #ff453c;
+  color: #643F99;
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, select.btn-default:hover, select.btn-default:focus, select.btn-default:active {
   background-color: #fff;
 }
 .btn.btn-default i, select.btn-default i {
-  color: #ff453c;
+  color: #643F99;
 }
 .btn.btn-primary, select.btn-primary {
-  background-color: #ff453c;
+  background-color: #643F99;
 }
 .btn.btn-primary:hover, select.btn-primary:hover {
-  background-color: #ff281d;
+  background-color: #13173a;
 }
 .btn i, select i {
   margin-left: 10px;
@@ -1442,7 +1442,7 @@ footer {
   overflow: hidden;
 }
 footer a {
-  color: #ff453c;
+  color: #643F99;
 }
 footer h2 a {
   color: #1c1c1c;
@@ -1461,7 +1461,7 @@ footer .footer-bottom .contact > span {
   margin-top: 15px;
 }
 footer .footer-bottom .contact h3 {
-  color: #ff453c;
+  color: #643F99;
   font-size: 48px;
   font-weight: bold;
 }
@@ -1474,7 +1474,7 @@ footer .footer-bottom .contact .social a {
   text-decoration: underline;
 }
 footer .footer-bottom .contact .social a:hover {
-  color: #ff453c;
+  color: #643F99;
 }
 
 @media (min-width: 992px) {
@@ -1649,17 +1649,17 @@ footer .footer-bottom .contact .social a:hover {
   padding-left: 20px;
 }
 .navigation .navbar .navbar-collapse .nav li.active a {
-  color: #ff453c;
+  color: #643F99;
 }
 .navigation .navbar .navbar-collapse .nav li.active a:after {
-  background-color: #ff453c;
+  background-color: #643F99;
   width: 100%;
 }
 .navigation .navbar .navbar-collapse .nav li a {
   -moz-transition: 0.8s;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  color: #747474;
+  color: #643F99;
   display: block;
   font-size: 16px;
   font-weight: bold;
@@ -1673,7 +1673,7 @@ footer .footer-bottom .contact .social a:hover {
   -moz-transition-timing-function: cubic-bezier(0.25, 0, 0, 1);
   -webkit-transition-timing-function: cubic-bezier(0.25, 0, 0, 1);
   transition-timing-function: cubic-bezier(0.25, 0, 0, 1);
-  background-color: #ff453c;
+  background-color: #643F99;
   content: "";
   left: 0;
   height: 2px;
@@ -1683,10 +1683,10 @@ footer .footer-bottom .contact .social a:hover {
 }
 .navigation .navbar .navbar-collapse .nav li a:hover {
   background-color: transparent;
-  color: #ff453c;
+  color: #643F99;
 }
 .navigation .navbar .navbar-collapse .nav li a:hover:after {
-  background-color: #ff453c;
+  background-color: #643F99;
   width: 100%;
 }
 .navigation .navbar .navbar-collapse .nav li a:active, .navigation .navbar .navbar-collapse .nav li a:focus {
