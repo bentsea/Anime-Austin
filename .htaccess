@@ -1,0 +1,9 @@
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^([a-z.]+)?animeaustin\.com$ [NC]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .? http://www.animeaustin.com%{REQUEST_URI} [R=301,L]
+
+RewriteEngine on
+RewriteRule ^/?registration([a-z/.]*)$ http://www.eventbrite.com/e/anime-austin-convention-tickets-20420266567 [R=302,L]
