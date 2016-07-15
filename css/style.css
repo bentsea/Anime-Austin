@@ -282,7 +282,7 @@ p {
   content: "";
   display: block;
   height: 50px;
-  width: 1000px;
+  /* width: 1000px; */
   position: absolute;
   left: 0;
   top: 0;
