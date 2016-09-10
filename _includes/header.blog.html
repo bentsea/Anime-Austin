@@ -8,7 +8,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="/" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <a class="navbar-brand" href="/#home">
                       <img src="/images/logo.png" alt="LouisiANIME Logo" width="150px">
                   </a>
               </div>
@@ -16,19 +16,19 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li><a class="sscroll" href="#guests">Guests &<br />Programming</a>
+                      <li><a href="/">Home</a>
                       </li>
-                      <li><a class="sscroll" href="#map">Location</a>
+                      <li><a href="javascript:;" onClick="history.go(-1);return true;">Back</a>
                       </li>
-                      <li><a class="sscroll" href="#contact">Contact Us</a>
+                      {% if paginator.next_page %}
+                      <li><a href="{{ paginator.next_page_path }}">Page {{ paginator.next_page }} <span class="glyphicon glyphicon-forward"></span></a>
                       </li>
-                      <li><a href="/registration_information/">Registration</a>
+                      {% endif %}
+                      {% if paginator.previous_page %}
+                      <li><a href="{{ paginator.previous_page_path }}"><span class="glyphicon glyphicon-backward"></span> Page {{ paginator.previous_page }}</a>
                       </li>
-                      <li><a href="/news/">News</a>
-                      </li>
-                      <li><a href="/about">About Us</a>
-                      </li>
-                      <li><a href="/vendors">Vendors &<br />Artists</a>
+                      {% endif %}
+                      <li><a href="/#contact">Contact Us</a>
                       </li>
                       <li style="margin-left: 20px;">
                         <form method="get" id="searchform" id="searchbox_012786251990353476482:tb8pbwmbzlq" action="/search-results/">
@@ -39,10 +39,10 @@
                               <tr>
                                 <td style="border-style:none;">
                                   <div style="background: url(/images/roundbox.gif) no-repeat left top; padding: 0px; height: 22px;">
-                                    <input  type="text" onfocus="defaultInput(this)" onblur="clearInput(this)" name="s" id="s" name="zoom_query" style="border: none; color: black; background-color: transparent; width: 106px; padding-left: 5px; padding-right: 5px;">
+                                    <input  type="text" onfocus="defaultInput(this)" onblur="clearInput(this)" name="s" id="s" name="zoom_query" style="border: none; color: black; background-color: transparent; width: 106px; padding-left: 5px; padding-right: 5px;"> 
                                   </div>
                                 </td>
-                                <td style="border-style:none;">
+                                <td style="border-style:none;"> 
                                   <input type="submit" id="searchsubmit" value=" " style="border-style: none; background: url('/images/searchbutton1.gif') no-repeat; width: 24px; height: 22px;">
                                 </td>
                               </tr>
@@ -50,15 +50,8 @@
                           </div>
                         </form>
                       </li>
-                      <!-- <li><a class="sscroll" href="/conops">Con Operations</a>
-                      </li> -->
                   </ul>
               </div>
-
               <!-- /.navbar-collapse -->
-
-              <div>
-
-              </div>
           </nav>
         </div>

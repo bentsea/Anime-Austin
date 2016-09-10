@@ -1,526 +1,236 @@
 ---
-layout: default
-image: /img/meta/carousel1.jpg
-description: Welcome to the home of Anime Austin! Join us on July 15-17 for a refreshing convention experience. Get ready to have a blast with exciting guests, great anime, and music you can dance to.
+title: Home
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+
+    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}{% if paginator.page %} Page {{ paginator.page }}{% endif %}</title>
+    <meta name="description" content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% if paginator.page %} Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:image" content="{{ site.url}}{% if page.image %}{{ page.image }}{% else %}/images/carousel/LANIME2017.png{% endif %}">
+    <meta property="og:description" content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/one-page-wonder.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 
-<!-- Navigation -->
-<div class="navigation fade-in" style="margin-top:-80px;">
-  <div class="container">
-      <header class="navbar" role="banner">
-          <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <div class="navbar-brand nav" id="brand">
-                  <a href="#top"><img src="/img/logo.png" alt="brand"></a>
+    <!-- reCaptcha script -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43424834-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="/images/logo-1.png" alt="LouisiANIME Logo"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">Registration</a>
+                    </li>
+                    <li>
+                        <a href="#services">Location</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+              <!--<img src="/images/carousel/louisianime-logo-dates.png">-->
+                <!--<h1>One Page Wonder</h1>
+                <h2>Will Knock Your Socks Off</h2>-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="/images/carousel/heading-susie-image.jpg">
+            <h2 class="featurette-heading">Register Now
+                <span class="text-muted">Early Bird Price!</span>
+            </h2>
+            <p class="lead">For just 2 weeks, you can register for only $30! Register at LouisiANIME.com/registration or at the link below:</p>
+            <a href="http://www.louisianime.com/registration"><div class="btn btn-primary btn-lg">Register Now!</div></a>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="services">
+            <img class="featurette-image img-circle img-responsive pull-left" src="/images/carousel/crowne-plaza-baton-rouge.jpg">
+            <h2 class="featurette-heading">Baton Rouge Crowne Plaza
+                <span class="text-muted">Reserve Now!</span>
+            </h2>
+            <p class="lead">Book your room now for only $99 a night! Simply ask for the LouisiANIME room rate when you contact the hotel:</p>
+            <address class="lead">
+                <a href="tel:2259252244">(225) 925-2244</a><br>
+                4728 Constitution Ave<br>
+                Baton Rouge, LA 70808
+            </address>
+            <p>Or register online at <a href="http://www.crownebaton.com">www.crownebaton.com</a> using LCO as the three digit reservation code! Navigate to <a href="http://www.crownebaton.com">www.crownebaton.com</a>, click on “Accommodations” to the left, and click on “Book Now”.</p>
+            <p>Under “Make a Reservation” put in your check-in and check-out dates and click on “Check Rates and Availability”, click on "More Options" and under <b>GROUP CODE</b> type in your 3 digit code LCO and press BOOK.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="contact">
+          <div class="row">
+              <div class="col-md-12 mg-bt-80">
+                  <div class="header-content">
+                      <h2 class="featurette-heading">Contact Us</h2>
+                  </div>
+                  <p class="lead">Are you a vendor looking for space, Panelist wanting to share your panels, or just have a question? Fill out the form below, or email the department you wish to speak to directly and we'll reply back as soon as we can. We appreciate everyone who takes the time to contact us!</p>
               </div>
           </div>
-          <div class="navigation-wrapper">
-              <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-                  <ul class="nav navbar-nav">
-                      <li><a href="#top" class="fade-in">Home</a></li>
-                      <li><a href="#speakers" class="fade-in">Guests</a></li>
-                      <li><a href="#schedule" class="fade-in">Programming</a></li>
-                      <li><a href="#about" class="fade-in">About</a></li>
-                      <li><a href="#register" class="fade-in">Registration</a></li>
-                      <li><a href="/rules" class="fade-in">Rules</a></li>
-                      <li><a href="/contact" class="fade-in">Info & Contact Us</a></li>
+          <div class="row">
+            <div class="col-sm-6 col-md-8">
+                <form id="contact-us" role="form" action="/form-error/" method="post">
+                    <input type="hidden" name="form_tools_form_id" value="9" />
+                    <div class="form-group row">
+                        <div class="col-md-8">
+                            Email: <input type="email" class="form-control col-md-6" name="replyemail" id="replyemail" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-8">
+                            Subject: <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-lg-11">
+                            Message: <textarea class="form-control" name="message" id="message" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="g-recaptcha" data-theme="dark" data-callback="verifySuccess" data-expire-callback="resetVerify" data-sitekey="6LepjgwTAAAAAP3kfLXo3S9KwCQHSZ_Grq-LdFF_" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                    <br/>
+                    <button id="submitButton" type = "submit" class="btn btn-dark big" disabled>Send Message</button>
+                </form>
+            </div>
+
+              <script>
+                  function verifySuccess(captcha_data) {
+                      document.getElementById("contact-us").action = "/validate.php";
+                      document.getElementById("submitButton").disabled = false;
+                  }
+
+                  function resetVerify(captcha_data) {
+                      document.getElementById("contact-us").action = "/form-error/";
+                      document.getElementById("submitButton").disabled = true;
+                  }
+              </script>
+
+
+              <div class="col-sm-6 col-md-4">
+                  <p class="lead">You may also contact us through a specific department:</p>
+                  <br/>
+                  <ul>
+                      <li>Programming Head:<br/>
+                          programming@louisianime.com
+                      </li>
+                      <li>Vendors Head:<br/>
+                          vendors@louisianime.com
+                      </li>
+                      <li>Cosplay Head:<br/>
+                          cosplay@louisianime.com
+                      </li>
+                      <li>Promotional Materials:<br/>
+                          executivedirector@louisianime.com
+                      </li>
+                      <li>Executive Director:<br/>
+                          executivedirector@louisianime.com
+                      </li>
+                      <li>Social Media:<br/>
+                          Please contact our social media through Facebook.
+                      </li>
                   </ul>
-              </nav><!-- /.navbar collapse-->
-          </div>
-      </header><!-- /.navbar -->
-  </div><!-- /.container -->
-</div>
-<!-- end Navigation -->
-<!-- Slider -->
-<div class="slider" style="margin-top:-130px;">
-  <div class="overlay">
-      <div class="container">
-          <div class="information fade-in move">
-              <div><i class="fa fa-map-marker"></i>Austin</div>
-              <div><i class="fa fa-calendar"></i>07/15/2016</div>
-          </div>
-          <div class="title-wrapper fade-in">
-              <div class="title expand move"><h1>Anime Austin</h1></div>
-              <!--<div class="title expand move"><h4>Video Games + Comics + Anime</h4></div>-->
-          </div>
-          <div class="call-to-action fade-in move">
-              <a href="#register" class="roll">Register!</a>
-          </div>
-      </div>
-  </div>
-  <div id="slider" class="owl-carousel has-parallax">
-      <div class="slide">
-          <img src="/img/carousel/carousel1.jpg" alt="">
-      </div>
-      <div class="slide">
-          <img src="/img/carousel/carousel1.jpg" alt="">
-      </div>
-  </div>
-</div>
-<!-- end Slider -->
+              </div>
+            </div>
+        </div>
 
-<!-- Page Content -->
-<div id="page-content">
+        <hr class="featurette-divider">
 
-          <!-- Speakers -->
-  <section id="speakers" class="block">
-      <div class="container">
-          <header>
-              <h2><a href="#speakers" class="roll">Guests</a></h2>
-          </header>
-          <section class="speakers background-stripe">
-              <div class="row row-centered">
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal1">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/ben-hamby.jpg" data-toggle="modal" data-target="#modal1" alt="">
-                          </aside>
-                          <h3>Ben Hamby</h3>
-                          <h4>Programming Guest</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal2">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/tyson.jpg" alt="">
-                          </aside>
-                          <h3>Tyson Rinehart</h3>
-                          <h4>Voice Actor, Writer</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal3">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/Meatballhead.jpg" alt="">
-                          </aside>
-                          <h3>Caitlynn French</h3>
-                          <h4>Voice Actress</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal5">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/caleb_hyles_headshot.png" alt="">
-                          </aside>
-                          <h3>Caleb Hyles</h3>
-                          <h4>YouTube Personality</h4>
-                      </div>
-                  </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; LouisiANIME 2016</p>
                 </div>
-                <div class="row row-centered">
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal7">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/gareth_west_headshot.jpg" alt="">
-                          </aside>
-                          <h3>Gareth West</h3>
-                          <h4>Actor, Voice Actor, Cosplay Guest</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal4">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/mika_thumbnail.jpg" alt="">
-                          </aside>
-                          <h3>Mika</h3>
-                          <h4>Cosplay Guest</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal6">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/firaga_fox_and_shinka_studios.jpg" alt="">
-                          </aside>
-                          <h3>Firaga Fox &<br/>Shinka Studios</h3>
-                          <h4>Cosplay Guests</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal8">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/bullet_machine.jpg" alt="">
-                          </aside>
-                          <h3>Bullet Machine</h3>
-                          <h4>Musical Guests</h4>
-                      </div>
-                  </div>
-                  <!--<div class="col-md-3 col-sm-3">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal3">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/speaker-03.png" alt="">
-                          </aside>
-                          <h3>John Doe</h3>
-                          <h4>Marketing Guru</h4>
-                      </div>
-                  </div>-->
-              </div><!-- .row -->
-              <div class="row row-centered">
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal9">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/david-vincent.jpg" alt="">
-                          </aside>
-                          <h3>David Vincent</h3>
-                          <h4>Actor / Producer</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal10">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/galaxy-girl-headshot.jpg" alt="">
-                          </aside>
-                          <h3>Galaxy Girl</h3>
-                          <h4>Programming Guest</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal11">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/vitamin-h.jpg" alt="">
-                          </aside>
-                          <h3>Vitamin H</h3>
-                          <h4>Programming Guests</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal12">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/atelier-heidi.jpg" alt="">
-                          </aside>
-                          <h3>Atelier Heidi</h3>
-                          <h4>Cosplay Guest</h4>
-                      </div>
-                  </div>
-              </div><!-- .row 3 -->
-              <div class="row row-centered">
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal13">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/pro-jared.jpg" alt="">
-                          </aside>
-                          <h3>Pro Jared</h3>
-                          <h4>YouTube Personality</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal14">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/Samantha_Inoue-Harte.jpg" alt="">
-                          </aside>
-                          <h3>Samantha Inoue-Harte</h3>
-                          <h4>Industry Producer</h4>
-                      </div>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-centered">
-                      <div class="speaker">
-                          <aside class="image">
-                              <div class="plus-wrapper" data-toggle="modal" data-target="#modal15">
-                                  <div class="plus"><i class="fa fa-plus"></i></div>
-                              </div>
-                              <img src="/img/headshots/Sarah_Esperkin_headshot.jpg" alt="">
-                          </aside>
-                          <h3>Sarah Esperkin</h3>
-                          <h4>Cosplay Guest</h4>
-                      </div>
-                  </div>
-              </div><!-- .row 4 -->
-          </section><!-- .speakers -->
-      </div><!-- .container -->
-  </section>
-  <!-- end Speakers -->
-<hr/>
+            </div>
+        </footer>
 
-  <!-- Schedule -->
-  <section class="block" id="schedule">
-      <div class="container">        
-          <header>
-              <h2><a href="#schedule" class="roll">Programming & Scheduling</a></h2>
-          </header>
+    </div>
+    <!-- /.container -->
 
-          <h3>Programming Events</h3>
-          <h4>Convention Hours</h4>
-          <ul>
-            <li><b>Friday:</b> 11am - 1:30am</li>
-            <li><b>Saturday:</b> 10am - 1:30am</li>
-            <li><b>Sunday:</b> 11am - 5pm</li>
-          </ul>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-          <h4>Registration Hours</h4>
-          <ul>
-            <li><b>Friday:</b> 9am - 7pm</li>
-            <li><b>Saturday:</b> 8am - 6pm</li>
-            <li><b>Sunday:</b> 9am - 1pm</li>
-          </ul>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-          <h4>Vendor Room Hours</h4>
-          <ul>
-            <li><b>Friday:</b> 12pm - 7pm (11:30am for Premium Members)</li>
-            <li><b>Saturday:</b> 11am - 6pm (10:30am for Premium Members)</li>
-            <li><b>Sunday:</b> 11am - 3pm (10:30am for Premium Members)</li>
-          </ul>
+</body>
 
-
-          <h4>AMV League Qualifier</h4>
-          <p>Anime Austin is proud to host an AMV League Qualifier! AMV League is a year-long, multi-convention AMV contest where the winners of each qualifying event are pitted against each other in the AMV League Nationals.</p>
-          <p>You can make videos with any kind of animation, American or Japanese, 2D or 3D, even animation you've made! Editors can submit up to four videos to each qualifying event, one for each of our four judging categories. The full list of rules and criteria can be found at the link below:</p>
-          <ul>
-            <li><a href="http://amvleague.com/rules-and-criteria.html">AMV League Rules and Criteria</a></li>
-          </ul>
-          <p>If you want to submit a video to Anime Austin's qualifier, the form is here</p>
-          <ul>
-            <li><a href="http://amvleague.com/austin2016.html">Anime Austin AMV League Qualifier</a></li>
-          </ul>
-          <h4>Cosplay Contest</h4>
-          <p>The event everyone loves most. Get ready to see talented individuals show off skill and creativity in the form of some of the best cosplay around. Interested in showing the world what you've got? Download the rules and guidelines below if you're interested in being in the contest:</p>
-          <ul>
-            <li><a href="/rules">Weapons Policy</a></li>
-            <li><a href="/documents/cosplay_rules_2016.docx">Cosplay Rules</a></li>
-            <li><a href="/documents/cosplay_skill_level_guidelines.docx">Cosplay Skill Level Guidelines</a></li>
-          </ul>
-          <p>To sign up for the cosplay contest, simply fill out the link below or request an application at the convention:</p>
-          <ul>
-            <li><a href="https://www.formpl.us/form/5688512001081344/">Cosplay Contest Registration Form</a></li>
-          </ul>
-          <h4>Game Tournament</h4>
-          <p>It's time to show off your gaming prowess. Anime Austin will be hosting gaming tournaments all weekend long. Check out the list of events we have scheduled and start practicing:</p>
-          <ul>
-            <li><a href="/documents/anime_austin_2016_gaming_schedule.docx">Gaming Tournament Schedule</a></li>
-          </ul>
-          <h4>Lolita Tea Party Meetup</h4>
-          <p>Join us for Lunch on Sunday at 11am-1pm for a Lolita meetup. We will have sandwiches, tea, desserts, games, and prizes. Plus we will have a Lolita Swap meet the last 30 minutes of the event. Lolita Attire Required.</p>
-          <p>Tea Party admission is $25, and can be purchased at the door or online at the link below in advance:</p>
-          <ul>
-            <li><a href="/registration">Lolita Tea Party Tickets</a></li>
-          </ul>
-
-          <br><br>
-
-          <h3>Schedule</h3>
-          <p>Click the link below to access the most up to date schedule:</p>
-          <ul>
-            <li><a href="/schedule">http://www.animeaustin.com/schedule</a></li>
-          </ul>
-          <!--
-          <p>Interested in hosting a panel for Anime Austin? Apply <a href="/contact#panels">here</a> to contact our programming director to be a part of Anime Austin this year! Panelists receive a free weekend badge.</p>
-          -->
-      </div><!-- .container -->
-  </section>
-  <!-- end Schedule -->
-
-
-  <!-- About -->
-  <section id="about" class="block expand left background-color-grey-light">
-      <div class="container">
-          <header>
-              <h2><a href="#about" class="roll">About Anime Austin</a></h2>
-          </header>
-          <section class="about">
-              <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                      <div class="information">
-                          <div class="date">
-                              <div class="day">07</div>
-                              <div class="divider">/</div>
-                              <div class="month">15</div>
-                              <div class="divider">/</div>
-                              <div class="year">2016</div>
-                          </div>
-                          <div class="location">Austin</div>
-                          <div class="address">Holiday Inn Austin Midtown, 6000 Middle Fiskville Road</div>
-                      </div><!-- .information -->
-                      <hr>
-                      <p>Anime Austin is an annual anime, arts, and Japanese pop culture convention making its debut in 2016. The convention will take place July 15-17 at the Holiday Inn Austin Midtown. Meet up with your friends or make some new ones at this year’s Anime Austin.</p>
-                      <p>We are the newest anime convention in central Texas. Sign up for a weekend of fun filled programming and meet your favorite voice actors.  This show is looking to change the way people experience fandom with new programming and a new way for the community to come together.</p>
-                      <p>Anime Austin will be at the Holiday Inn Austin Midtown, and attendees registering to stay at the hotel with the Anime Austin room block will get a special discount rate of only $90 a night, or you can register online with the following lingk:</p>
-                      <ul>
-                        <li><a href="http://www.ihg.com/holidayinn/hotels/us/en/austin/ausmf/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn&qChld=0&qFRA=1&qGRM=0&qGrpCd=AAT&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=12&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99801505&icdv=99801505">Holiday Inn Austin Midtown $90/Night</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                      <div class="video">
-                          <img class="img-responsive" src="/img/about-anime-austin.png">
-                      </div><!-- .video -->
-                  </div><!-- .col-md-6 -->
-              </div><!-- .row -->
-          </section><!-- .about -->
-      </div><!-- .container -->
-  </section>
-  <section class="footer-top">
-      <div class="container">
-          <div class="find-way">
-              <div class="row">
-                  <div class="col-md-5 col-sm-7 col-md-offset-7 col-sm-offset-5">
-                      <div class="form-group">
-                          <div class="input-group">
-                              <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
-                              <input type="text" class="form-control" id="find-way" name="find-way" placeholder="Enter your location to find a way">
-                          </div>
-                      </div><!-- /.form-group -->
-                  </div><!-- .col-md-5 -->
-              </div><!-- .row -->
-          </div><!-- .find-way -->
-      </div><!-- .container -->
-  </section>
-  <div id="map"></div><!-- #map -->
-  <h2 style="text-align:center;"><a href="http://www.ihg.com/holidayinn/hotels/us/en/austin/ausmf/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn&qChld=0&qFRA=1&qGRM=0&qGrpCd=AAT&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=12&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99801505&icdv=99801505">Reserve Your Room Online Now!</a></h2>
-  <!-- end About -->
-
-
-  <!-- Tickets -->
-  <section id="register" class="block">
-      <div class="container">
-          <header>
-              <h2><a href="#tickets" class="roll">Tickets & Registration</a></h2>
-          </header>
-          <div class="tickets">
-              <div class="row">
-                  <div class="col-md-3 col-sm-3">
-                      <div class="description">
-                          <header class="equal-height"></header>
-                          <ul>
-                              <li>All Weekend Access</li>
-                              <li>T-Shirt</li>
-                              <li>Poster</li>
-                              <li>VIP Mixer</li>
-                              <li>VIP Early Access</li>
-                              <li>Order Now</li>
-                          </ul>
-                      </div><!-- .description -->
-                  </div><!-- .col-md-3 -->
-                  <div class="col-md-3 col-sm-3">
-                      <div class="ticket">
-                          <header class="equal-height">
-                              <h3>Weekend Pass</h3>
-                              <figure><a href="http://animeaustin.com/registration">$40</a></figure>
-                          </header>
-                          <ul>
-                              <li class="checked"><i class="fa fa-check"></i><span>All Weekend Access</span></li>
-                              <li class="unchecked"><a href="http://animeaustin.com/registration"><i class="fa fa-times">$15</i><span>T-Shirt</span></a></li>
-                              <li class="unchecked"><a href="http://animeaustin.com/registration"><i class="fa fa-times">$5</i><span>Poster</span></a></li>
-                              <li class="unchecked"><i class="fa fa-times"></i><span>VIP Mixer</span></li>
-                              <li class="unchecked"><i class="fa fa-times"></i><span>VIP Early Access</span></li>
-                              <li class="checked"><a class="btn btn-primary" href="http://animeaustin.com/registration">Order Now</a></li>
-                          </ul>
-                      </div><!-- .ticket -->
-                  </div><!-- .col-md-3 -->
-                  <div class="col-md-3 col-sm-3">
-                      <div class="ticket">
-                          <header class="equal-height">
-                              <h3>Weekend VIP Pass</h3>
-                              <figure><b>Sold Out</b></figure>
-                          </header>
-                          <ul>
-                              <li class="checked"><a href="http://animeaustin.com/registration"><i class="fa fa-check"></i></a><span>All Weekend Access</span></li>
-                              <li class="checked"><a href="http://animeaustin.com/registration"><i class="fa fa-check">Included</i><span>T-Shirt</span></a></li>
-                              <li class="checked"><a href="http://animeaustin.com/registration"><i class="fa fa-check">Included</i><span>Poster</span></a></li>
-                              <li class="checked"><i class="fa fa-check"></i><span>VIP Mixer</span></li>
-                              <li class="checked"><i class="fa fa-check"></i><span>VIP Early Access</span></li>
-                              <li class="checked"><b>Sold Out</b></li>
-                          </ul>
-                      </div><!-- .ticket -->
-                  </div><!-- .col-md-3 -->
-              </div><!-- .row -->
-          </div><!-- .tickets -->
-          <p>VIP Early access includes advanced access to the dealer room and main events programming. Single day passes will be available on site at the following prices:</p>
-          <ul>
-            <li>Friday: $20</li>
-            <li>Saturday: $25</li>
-            <li>Saturday/Sunday: $30</li>
-            <li>Sunday: $15</li>
-          </ul>
-      </div><!-- .container -->
-  </section>
-  <!-- end Tickets -->
-
-
-  <!-- Testimonials -->
-<div style="display:none;">
-  <section id="testimonials" class="block expand right background-color-grey-light">
-      <div class="container">
-          <div class="quote">“</div>
-          <div class="owl-carousel testimonials-carousel">
-              <blockquote class="testimonial">
-                  <figure>
-                      <div class="image">
-                          <img alt="" src="/img/headshots/Gandalf-2.jpg" alt="">
-                      </div>
-                  </figure>
-                  <aside class="cite">
-                      <p>
-                          "I've never been so high in my entire life. Like... seriously, I'm tripping balls right now.<br/><br/>
-                          Wait... what were you asking about?"
-                      </p>
-                      <footer style="text-align:right;">-Matthew</footer>
-                      <figure></figure>
-                  </aside>
-              </blockquote>
-              <!--
-              <blockquote class="testimonial">
-                  <figure>
-                      <div class="image">
-                          <img alt="" src="/img/speaker-01.png" alt="">
-                      </div>
-                  </figure>
-                  <aside class="cite">
-                      <p>Vivamus vestibulum, libero et cursus ultrices, sem ex elementum augue, ultricies dictum mi leo ut erat</p>
-                      <footer>Natalie Jenkins</footer>
-                      <figure>Old School Architects</figure>
-                  </aside>
-              </blockquote>-->
-          </div><!-- /.testimonials-carousel -->
-      </div><!-- .container -->
-  </section>
-</div>
-  <!-- end Testimonials -->
+</html>
