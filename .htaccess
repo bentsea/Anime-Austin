@@ -6,7 +6,7 @@ RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule .? http://www.animeaustin.com%{REQUEST_URI} [R=301,L]
 
 RewriteEngine on
-RewriteRule ^/?registration([a-z/.]*)$ http://www.eventbrite.com/e/anime-austin-convention-tickets-20420266567 [R=302,L]
+RewriteRule ^/?registration([a-z/.]*)$ https:\/\/www\.eventbrite\.com\/e\/anime-austin-convention-tickets-27345769934 [R=302,L]
 
 RewriteEngine on
 RewriteRule ^/?schedule([a-z/.]*)$ https://docs.google.com/spreadsheets/d/1en4a_ly0E1HVe_f8uNuudBDwI2eO0TBfrxwaWvLbBXc/edit?usp=sharing [R=302,L]
