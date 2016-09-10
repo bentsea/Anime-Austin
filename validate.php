@@ -30,6 +30,6 @@
 
         $response = curl_exec($ch);
         curl_close($ch);
-        header( 'Location: http://www.louisianime.com/thanks/' ) ;
-	} else { header( 'Location: http://www.louisianime.com/form-error' ) ; }
+        header( 'Location: http://www.animeaustin.com/thanks/' ) ;
+	} else { header( 'Location: http://www.animeaustin.com/form-error/' ) ; }
 ?>
