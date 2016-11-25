@@ -3,6 +3,8 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^([a-z.]+)?animeaustin\.com$ [NC]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} !^dev\. [NC]
+RewriteCond %{HTTP_HOST} !^img\. [NC]
 RewriteRule .? http://www.animeaustin.com%{REQUEST_URI} [R=301,L]
 
 RewriteEngine on
